@@ -5,105 +5,111 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='Resources/reset.css' type='text/css'>
         <link rel='stylesheet' href='Resources/styles.css' type='text/css'>
-        <title> Table Top Gaming</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&family=Ubuntu:ital@1&display=swap" rel="stylesheet"> 
+        <title> Games Night!</title>
            
     </head>
     <body>
-        <header>
-            <!-- Main logo -->
-            <div class="logo"></div>
-            <!-- Navbar -->
-            <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Events</a></li>
-                    <li><a>Sign Up</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Main content -->
-        <main>
-        <!-- Promo Banner -->
-        <div class="promoBanner"><a>buy here!</a></div>
-
-        <!-- left hand coloumns (events filter / search)-->
-        <aside>
-            <div class="Events_Search">
-                <label for="EventSearch">Event Search</label>
-                <br>
-                <input type="text" id="SearchBar" name="EventSearch" placeholder="Search for events..">
-                <div class="btnContainer">
-                    <h5>Sort By</h5>
-                    <button type="button" class="A-Z">A-Z</button>
-                    <br>
-                    <button type="button" class="Z-A">Z-A</button>
-                    <br>
-                    <button type="button" class="date">Date</button>
-                    <br>
-                    <button type="button" class="featured">Featured</button>
-                </div>    
-            </div>
-        </aside>
-        
-        <!-- central coloumns (events) -->
-
-        <div class="event" id="event">
-            <img class="eventIMG" src="">
-            <h3> Title </h3>
-            <h4> Date </h4>
-            <h6> Location </h6>
-            <p>Descript of event </p>
-        </div>
-        <div class="event" id="event">
-            <img class="eventIMG" src="">
-            <h3> Title </h3>
-            <h4> Date </h4>
-            <h6> Location </h6>
-            <p>Descript of event </p>
-        </div>
-        <div class="event" id="event">
-            <img class="eventIMG" src="">
-            <h3> Title </h3>
-            <h4> Date </h4>
-            <h6> Location </h6>
-            <p>Descript of event </p>
-        </div>
-        <div class="event" id="event">
-            <img class="eventIMG" src="">
-            <h3> Title </h3>
-            <h4> Date </h4>
-            <h6> Location </h6>
-            <p>Descript of event </p>
-        </div>
-
-        <!-- Right hand Columns (featured games)-->
-
-        <div class="featuredGames">
-            <h2> Featured Games </h2>
-            <div class="gameContainer">
-                <h4> Game Title </h4>
-                <p> game descriotion</p>
-                <a>Buy Here!</a>
-            </div>  
-            <div class="gameContainer">
-                <h4> Game Title </h4>
-                <p> game descriotion</p>
-                <a>Buy Here!</a>
-            </div>    
-            <div class="gameContainer">
-                <h4> Game Title </h4>
-                <p> game descriotion</p>
-                <a>Buy Here!</a>
-            </div>      
-        </div>
-
-        <!-- Footer -->
-        <footer>
+        <!-- Grid container -->
+        <div class="grid">
             
-        </footer>
+                <!-- Main logo -->
+                <div class="logo"></div>
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Events</a></li>
+                        <li><a>Sign Up</a></li>
+                    </ul>
+                </nav>
+            
+            <!-- Main content -->
+            
+            <!-- Promo Banner -->
+            <div class="promoBanner"><a>buy here!</a></div>
 
-        </main>
+            <!-- left hand coloumns (events filter / search)-->
+            
+                <aside class="events_Search">
+                    <label for="EventSearch">Event Search</label>
+                    <br>
+                    <input type="text" id="SearchBar" name="EventSearch" placeholder="Search for events..">
+                    <div class="btnContainer">
+                        <h5>Sort By</h5>
+                        <button type="button" class="A-Z">A-Z</button>
+                        <br>
+                        <button type="button" class="Z-A">Z-A</button>
+                        <br>
+                        <button type="button" class="date">Date</button>
+                        <br>
+                        <button type="button" class="featured">Featured</button>
+                    </div>    
+                </aside>
+            
+        
+            <!-- central coloumns (events) -->
+            <section class="events_Container">
+                <div class="event" id="event">
+                    <img class="eventIMG" src="">
+                    <h3> Title </h3>
+                    <h4> Date </h4>
+                    <h6> Location </h6>
+                    <p>Descript of event </p>
+                </div>
+                <div class="event" id="event">
+                    <img class="eventIMG" src="">
+                    <h3> Title </h3>
+                    <h4> Date </h4>
+                    <h6> Location </h6>
+                    <p>Descript of event </p>
+                </div>
+                <div class="event" id="event">
+                    <img class="eventIMG" src="">
+                    <h3> Title </h3>
+                    <h4> Date </h4>
+                    <h6> Location </h6>
+                    <p>Descript of event </p>
+                </div>
+                <div class="event" id="event">
+                    <img class="eventIMG" src="">
+                    <h3> Title </h3>
+                    <h4> Date </h4>
+                    <h6> Location </h6>
+                    <p>Descript of event </p>
+                </div>
+            </section>  
+
+            <!-- right hand columns (featured games)-->
+
+            <aside class="featured_Games">
+                <h2> Featured Games </h2>
+                <div class="gameContainer">
+                    <h4> Game Title </h4>
+                    <p> game descriotion</p>
+                    <a>Buy Here!</a>
+                </div>  
+                <div class="gameContainer">
+                    <h4> Game Title </h4>
+                    <p> game descriotion</p>
+                    <a>Buy Here!</a>
+                </div>    
+                <div class="gameContainer">
+                    <h4> Game Title </h4>
+                    <p> game descriotion</p>
+                    <a>Buy Here!</a>
+                </div>      
+            </aside>
+
+            <!-- Footer -->
+            <footer>
+                <p>Copyright © 2021 Table Top Gaming</p>
+            </footer>
+            
+        </div>    
     </body>
 </html>
