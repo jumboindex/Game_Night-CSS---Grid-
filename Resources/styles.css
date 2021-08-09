@@ -1,7 +1,7 @@
 
 /* fonts styling */
 
-p, a, span {
+p, a, span, button {
     font-family: 'Lato', sans-serif;
 }
 
@@ -9,7 +9,7 @@ h1, h2 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-h3, h4, h5, h6 {
+h3, h4, h5, h6, label {
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -20,7 +20,7 @@ h3, h4, h5, h6 {
     width: 100%;
     min-height: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px 1fr 150px repeat(11, 1fr) ;
+    grid-template-rows: 150px 1fr 350px repeat(11, 1fr) ;
     border: black solid 1px;
             
 }
@@ -29,7 +29,6 @@ h3, h4, h5, h6 {
 /* logo styling */
 
 .logo {
-    border: black solid 1px;
     background-image: url("/Resources/logo.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -40,24 +39,68 @@ h3, h4, h5, h6 {
 /* nav styling */ 
 
 .navbar {
-    border:black solid 1px;
+    border-top: gray 1px solid;
+    border-bottom: gray 1px solid;
     grid-area: 2 / 1 / span 1 / span 12;
+}
+
+.navbar a {
+    display:inline-block;
+    padding: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 /* promo banner styling */
 
 .promoBanner {
-    border:black solid 1px;
+    display: flex;
     grid-area: 3 / 1 / span 1 / span 12;
     width: 100%;
     height: 100%;
+    background-image: url("/Resources/catanback.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;   
+}
+
+.promoBanner a {
+    text-decoration: none;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 /* left hand coloumns (events / filter search) */
 
 .events_Search {
-    border: black solid 1px;
+    font-weight: 300;
+    font-size: 1.25rem;
+    border: gray solid 1px;
     grid-area: 5 / 1 / span 4 / span 3; 
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    transition: duration 0.4ms; 
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+}
+
+button:hover {
+    background-color:#e7e7e7;
 }
 
 /* central coloumns (events) styling */
@@ -65,6 +108,21 @@ h3, h4, h5, h6 {
 .events_Container {
     border: black solid 1px;
     grid-area: 5 / 5 / span 8 / span 4;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event {
+    border: black solid 1px;
+    width: 100%;
+}
+
+.event img {
+    float: left;
+    height: 150px;
+    width: 100px;
 }
 
 /* right hand columns (featured games */
@@ -73,6 +131,8 @@ h3, h4, h5, h6 {
     border: black solid 1px;
     grid-area: 5 / 10 / span 8 / span 3;
     }
+
+ /* footer styling */   
 
  footer {
      border: black solid 1px;
