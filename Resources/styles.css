@@ -86,7 +86,8 @@ h3, h4, h5, h6, label {
     font-size: 1.25rem;
     border: gray solid 1px;
     box-shadow: 3px 6px #888888;
-    grid-area: 5 / 2 / span 2 / span 2; 
+    grid-area: 5 / 2 / span 2 / span 2;
+    text-align: center; 
 }
 
 button {
@@ -106,7 +107,6 @@ button:hover {
 /* central coloumns (events) styling */
 
 .events_Container {
-    
     grid-area: 5 / 6 / span 8 / span 4;
     display: flex;
     flex-flow: column nowrap;
@@ -126,6 +126,10 @@ button:hover {
     width: 100%;
     padding: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .event img {
@@ -185,3 +189,86 @@ button:hover {
     border-bottom: gray 1px solid;
     grid-area: 14 / 1 / span 1 / span 14;
  }
+
+
+ @media only screen and (max-width:480px) {
+
+    body {
+        font-size: 0.75rem;
+    }
+    .grid {
+        grid-template-columns: 1fr 10px 1fr 1fr;
+        grid-template-rows: 6rem 2.5rem 2.5rem repeat(8, 1fr) repeat(2, 2.5rem);
+        
+    }
+
+    .logo {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .navbar {
+        grid-area: 2 / 1 / span 1 / 5;
+    }
+
+    .promoBanner {
+        display:none;
+    }
+
+    .events_Search {
+        grid-area: 4 / 1 / span 1 / span 1; 
+    }
+    .events_Container {
+        grid-area: 4 / 3 / span 8 / 5;
+    }
+
+    .event h3 {
+        font-size: 1.25rem;
+    }
+
+
+    .featured_Games {
+        display:none;
+    }
+
+    footer {
+        grid-area: 13 / 1 / 14 / 5  ;
+    }
+}
+
+/* Tablet grid styles */
+
+@media only screen and (max-width:1024px)
+                   and (min-width:481px)
+                   {
+    .grid {
+        grid-template-columns: 10px repeat(9, 1fr) 10px;
+        grid-template-rows: 9.375rem 2.5rem 21.875rem 2.5rem repeat(8, 1fr) repeat(2, 2.5rem);
+    }
+
+    .logo {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .navbar {
+        grid-area: 2 / 1 / span 1 / span 12;
+    }
+
+    .promoBanner {
+        grid-area: 3 / 1 / span 1 / span 12;
+    }
+
+    .events_Search {
+        grid-area: 5 / 2 / span 2 / span 2;
+    }
+    .events_Container {
+        grid-area: 5 / 5 / span 8 / span 4;
+    }
+
+    .featured_Games {
+        display:none;
+    }
+
+    footer {
+        grid-area: 14/ 1 / 14 / 15;
+    }
+}
