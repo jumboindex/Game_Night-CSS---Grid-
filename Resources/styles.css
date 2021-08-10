@@ -203,7 +203,7 @@ button:hover {
     }
 
     .logo {
-        grid-area: 1 / 1 / 2 / 4;
+        grid-area: 1 / 2 / 2 / 5;
     }
 
     .navbar {
@@ -246,7 +246,7 @@ button:hover {
     }
 
     .logo {
-        grid-area: 1 / 2 / 2 / 4;
+        grid-area: 1 / 2 / 2 / 8;
     }
 
     .navbar {
