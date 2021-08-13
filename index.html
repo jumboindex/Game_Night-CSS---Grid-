@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='Resources/reset.css' type='text/css'>
         <link rel='stylesheet' href='Resources/styles.css' type='text/css'>
+        <script src="Resources/script.js" async></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&family=Ubuntu:ital@1&display=swap" rel="stylesheet"> 
@@ -43,16 +44,24 @@
                     <label for="EventSearch">Event Search</label>
                     <br>
                     <input type="text" id="SearchBar" name="EventSearch" placeholder="Search for events..">
-                    <div class="btnContainer">
+                    <div class="btnContainer" id="btnContainer">
                         <br>
                         <h5>Sort By</h5>
-                        <button type="button" class="A-Z">A-Z</button>
+                        <button type="button" class="btn Carcassonne" id="A-Z">Carcassonne</button>
                         <br>
-                        <button type="button" class="Z-A">Z-A</button>
+                        <button type="button" class="btn Catan">Catan</button>
                         <br>
-                        <button type="button" class="date">Date</button>
+                        <button type="button" class="btn MTG">Magic: The Gathering</button>
                         <br>
-                        <button type="button" class="featured">Featured</button>
+                        <button type="button" class="btn Takenoko">Takenoko</button>
+                        <br>
+                        <button type="button" class="btn Monopoly">Monopoly Deal</button>
+                        <br>
+                        <button type="button" class="btn CardGame">Card Games</button>
+                        <br>
+                        <button type="button" class="btn boardGames">Board Games</button>
+                        <br>
+                        <button type="button" class="btn showAll active"> Show All </button>
                     </div>    
                 </aside>
             
@@ -74,35 +83,35 @@
                     <h6> Stroud Road Games Club </h6> <br>
                     
                 </div>
-                <div class="event Carcassonne" id="event">
+                <div class="event Carcassonne" id="event_Carcassonne">
                     <img class="eventIMG" src="/Resources/carcassonne box art].webp">
                     <h3> Carcassonne - Mepel's Championship </h3> <br>
                     <h4> 27/08/21 </h4> <br>
                     <h6> Thorpe lea Games Center </h6>
                     
                 </div>
-                <div class="event Takenoko" id="event">
+                <div class="event Takenoko" id="event_Takenoko">
                     <img class="eventIMG" src="/Resources/Takenoko.webp">
                     <h3> Takenoko Championship </h3> <br>
                     <h4> 04/09/21 </h4> <br>
                     <h6> Sunny Staines Games Club </h6>
                     
                 </div>
-                <div class="event Takenoko" id="event">
+                <div class="event Monopoly" id="event_Monopoly">
                     <img class="eventIMG" src="/Resources/Takenoko.webp">
                     <h3> Takenoko Championship </h3> <br>
                     <h4> 04/09/21 </h4> <br>
                     <h6> Sunny Staines Games Club </h6>
                     
                 </div>
-                <div class="event Takenoko" id="event">
+                <div class="event Takenoko" id="event_Takenoko">
                     <img class="eventIMG" src="/Resources/Takenoko.webp">
                     <h3> Takenoko Championship </h3> <br>
                     <h4> 04/09/21 </h4> <br>
                     <h6> Sunny Staines Games Club </h6>
                     
                 </div>
-                <div class="event Takenoko" id="event">
+                <div class="event Takenoko" id="event_Takenoko">
                     <img class="eventIMG" src="/Resources/Takenoko.webp">
                     <h3> Takenoko Championship </h3> <br>
                     <h4> 04/09/21 </h4> <br>

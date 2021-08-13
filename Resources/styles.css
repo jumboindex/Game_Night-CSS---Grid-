@@ -235,6 +235,17 @@ button:hover {
     }
 }
 
+/* btn script styling */
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.show {
+    display: flex;
+}
+
 /* Tablet grid styles */
 
 @media only screen and (max-width:1024px)
