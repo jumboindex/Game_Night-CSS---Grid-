@@ -9,10 +9,17 @@
     };
  };
 
-
 // create button event handerlers
 arrBtn = ['Carcassonne', 'Catan', 'MTG', 'Takenoko', 'Monopoly', 'cardGame', 'boardGames', 'showAll'];
 arrBtn.forEach( button => {
     document.getElementById(button).addEventListener('click', () => filterEvents(button));
 });
 
+let searchBar = document.getElementById('SearchBar');
+searchBar.addEventListener('keyup', () => {
+    
+    let searchFilter = document.getElementById('SearchBar').value;
+    filterEvents(searchFilter);
+    
+}
+    );
