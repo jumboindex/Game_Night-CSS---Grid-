@@ -26,7 +26,7 @@ h3, h4, h5, h6, label {
 /* logo styling */
 
 .logo {
-    background-image: url("./Resources/logo.png");
+    background-image: url("/Resources/logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50% auto;
@@ -60,7 +60,7 @@ h3, h4, h5, h6, label {
     border-bottom: gray solid 1px;
     width: 100%;
     height: 100%;
-    background-image: url("./Resources/catanback.jpg");
+    background-image: url("/Resources/catanback.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
