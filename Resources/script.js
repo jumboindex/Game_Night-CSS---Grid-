@@ -1,5 +1,5 @@
 
-// filter events function 
+// filter events function
  function filterEvents (filter) {
     let eventsList = document.getElementById('events_Container').getElementsByClassName('event');
     for (let i = 0; i < eventsList.length; i++ ) {
@@ -14,12 +14,9 @@ arrBtn = ['Carcassonne', 'Catan', 'MTG', 'Takenoko', 'Monopoly', 'cardGame', 'bo
 arrBtn.forEach( button => {
     document.getElementById(button).addEventListener('click', () => filterEvents(button));
 });
-
+// search bar event handler
 let searchBar = document.getElementById('SearchBar');
 searchBar.addEventListener('keyup', () => {
-    
-    let searchFilter = document.getElementById('SearchBar').value;
-    filterEvents(searchFilter);
-    
-}
-    );
+    let searchFilter= document.getElementById('SearchBar').value.toLowerCase();
+    filterEvents(searchFilter);    
+});

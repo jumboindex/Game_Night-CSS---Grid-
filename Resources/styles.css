@@ -20,7 +20,7 @@ h3, h4, h5, h6, label {
     width: 100%;
     min-height: 100%;
     grid-template-columns: 10px repeat(12, 1fr) 10px;
-    grid-template-rows: 9.375rem 2.5rem 21.875rem 2.5rem repeat(8, 1fr) repeat(2, 2.5rem);
+    grid-template-rows: 9.375rem 2.5rem 21.875rem 2.5rem repeat(9, 1fr) 2.5rem;
 }
 
 /* logo styling */
@@ -112,7 +112,7 @@ button:hover {
 /* central coloumns (events) styling */
 
 .events_Container {
-    grid-area: 5 / 6 / span 8 / span 4;
+    grid-area: 5 / 6 / span 9 / span 4;
 }
 
 .events_Container .event_auto_flow {
@@ -155,7 +155,7 @@ button:hover {
 /* right hand columns (featured games */
 
 .featured_Games {
-    grid-area: 5 / 11 / span 8 / span 3;
+    grid-area: 5 / 11 / span 9 / span 3;
     }
 
 .featured_Games h3 {
@@ -225,6 +225,10 @@ button:hover {
     .events_Search {
         grid-area: 4 / 1 / span 1 / span 1; 
     }
+
+    .button {
+        font-size: 1rem;
+    }
     .events_Container {
         grid-area: 4 / 3 / span 8 / 5;
     }
@@ -250,7 +254,7 @@ button:hover {
                    {
     .grid {
         grid-template-columns: 10px repeat(9, 1fr) 10px;
-        grid-template-rows: 9.375rem 2.5rem 21.875rem 2.5rem repeat(8, 1fr) repeat(2, 2.5rem);
+        grid-template-rows: 9.375rem 2.5rem 21.875rem 2.5rem repeat(9, 1fr) 2.5rem;
     }
 
     .logo {
@@ -269,7 +273,7 @@ button:hover {
         grid-area: 5 / 2 / span 2 / span 2;
     }
     .events_Container {
-        grid-area: 5 / 5 / span 8 / span 4;
+        grid-area: 5 / 5 / span 9 / span 4;
     }
 
     .featured_Games {
