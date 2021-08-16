@@ -18,5 +18,5 @@ arrBtn.forEach( button => {
 let searchBar = document.getElementById('SearchBar');
 searchBar.addEventListener('keyup', () => {
     let searchFilter= document.getElementById('SearchBar').value.toLowerCase();
-    filterEvents(searchFilter);    
+    filterEvents(searchFilter);
 });

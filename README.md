@@ -1,8 +1,8 @@
-# Flexbox - company website
+# CSS Grid - responsive - club website
 
 ## Table of contents
 
-- [Flexbox - company website](#flexbox---company-website)
+  - [CSS Grid - responsive - club website](#CSS Grid - responsive - club website)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Technologies](#technologies)
@@ -12,26 +12,22 @@
 
 ## General info
 
-This is a fictional company website for my freind who is a tree surgeon, and created to practise using flexbox / responsive design. I have got a bit carried away, and set up a Flask server so I can grab the form data and email it to myself / sales@fostersforestry.co.uk if in production. At this stage I don't plan to purchase the domain or set up a mail server / use forwarding.
-
-Orginally the form emailed any data sumbited to my gmail, however Flask throws an error when SMTPlib is unable to login to the mail server, so this sections was commented out as I was not going to upload my password :). I understand the fix is to store the password as an environmental varibale.
+This project is a fictional board game club website I created as part of my codecademy course. The inspiration came from board games I have been playing recently. The initial scope was to creare a responsive website using Grid or flexbox, and I opted for Grid as my last project used flexbox. The website has media queries set for mobile, tablet and desktop and should scale. To make the project a bit more intresting and take advantage if grid-auto-flow, I created a search bar and filter function which filters events by name or catogory. 
 
 ## Technologies
 
 * HTML
 * CSS
 * Javascript
-* Python 3
 
 ## Setup
 
-``` terminal
-pip install flask
-```
+none
 
 ## To-do list
 
-* find a better way to store credentials to use SMTPlib.
+* filter events by location and date.
+* inject event dates which are x days in the future based on current date.
 
 ## Status
 
